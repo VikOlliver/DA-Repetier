@@ -291,13 +291,16 @@ STEPPER_CURRENT_CONTROL
 *
 ****************************************************************************************/
 #if MOTHERBOARD == 33
+#undef MOTHERBOARD
 #define MOTHERBOARD 3
 #define RAMPS_V_1_3
 #elif MOTHERBOARD == 34
+#undef MOTHERBOARD
 #define MOTHERBOARD 3
 #define RAMPS_V_1_3
 #define AZTEEG_X3
 #elif MOTHERBOARD == 35
+#undef MOTHERBOARD
 #define MOTHERBOARD 3
 #define RAMPS_V_1_3
 #define AZTEEG_X3_PRO
@@ -2209,6 +2212,7 @@ S3(ext)=9
 #endif
 
 #if NUM_EXTRUDER==1
+#undef E1_PINS
 #define E1_PINS
 #endif
 
