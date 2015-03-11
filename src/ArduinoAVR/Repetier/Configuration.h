@@ -243,13 +243,14 @@ A good start is 30 lower then the optimal value. You need to leave room for cool
  Overridden if EEPROM activated.
 */
 #define EXT0_PID_INTEGRAL_DRIVE_MIN 60
+// Derived empirically for Diamond Age Thermocouple 13-Mar-2015
 /** P-gain.  Overridden if EEPROM activated. */
-#define EXT0_PID_P   4.11
+#define EXT0_PID_P   31.32
 /** I-gain. Overridden if EEPROM activated.
 */
-#define EXT0_PID_I   0.85
+#define EXT0_PID_I   5.92
 /** Dgain.  Overridden if EEPROM activated.*/
-#define EXT0_PID_D 4.8
+#define EXT0_PID_D 41.43
 // maximum time the heater is can be switched on. Max = 255.  Overridden if EEPROM activated.
 #define EXT0_PID_MAX 255
 /** \brief Faktor for the advance algorithm. 0 disables the algorithm.  Overridden if EEPROM activated.
