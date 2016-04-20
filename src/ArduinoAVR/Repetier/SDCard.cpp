@@ -140,6 +140,8 @@ void SDCard::pausePrint(bool intern)
 #endif
     }
 #endif
+    Commands::waitUntilEndOfAllBuffers();
+    Extruder::disableAllExtruderMotors(); 
 }
 void SDCard::continuePrint(bool intern)
 {
